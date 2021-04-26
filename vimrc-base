@@ -1,0 +1,43 @@
+set nocompatible
+set encoding=utf-8
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" Colorschemess
+Plugin 'kristijanhusak/vim-hybrid-material'
+Plugin 'cocopon/iceberg.vim'
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'sjl/badwolf'
+Plugin 'lifepillar/vim-solarized8'
+Plugin 'scheakur/vim-scheakur'
+Plugin 'Badacadabra/vim-archery'
+Plugin 'sainnhe/edge'
+Plugin 'branwright1/salvation-vim'
+" IDE-like features
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'preservim/nerdtree'
+
+"  Leverage the power of Vim's compiler plugins without being bound by 
+"  synchronicity. Kick off builds and test suites using one of several 
+"  asynchronous adapters (including tmux, screen, iTerm, Windows, and a 
+"  headless mode), and when the job completes, errors will be loaded and parsed 
+" automatically.
+Plugin 'tpope/vim-dispatch'
+
+"  Tagbar is a Vim plugin that provides an easy way to browse the tags of 
+"  the current file and get an overview of its structure. 
+Plugin 'preservim/tagbar'
+
+"   An ack/ag/pt/rg powered code search and view tool, takes advantage of Vim 8's 
+"   power to support asynchronous searching, 
+"   and lets you edit file in-place with Edit Mode.
+Plugin 'dyng/ctrlsf.vim'
+
+"  This Vim plugin will help switching between companion
+"  files (e.g. ".h" and ".cpp" files)
+Plugin 'derekwyatt/vim-fswitch'
+
+"  This Vim plugin will pull C++ ptototypes into the implementation file
+Plugin 'derekwyatt/vim-protodef'
+call vundle#end()
+filetype plugin indent on    " required
