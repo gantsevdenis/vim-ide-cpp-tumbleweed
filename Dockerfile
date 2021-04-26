@@ -8,7 +8,7 @@ RUN useradd -m docker
 ENV HOME=/home/docker
 RUN mkdir -p ${HOME}/.vim/bundle
 ENV PATH="${HOME}/.local/bin:${PATH}"
-
+ENV TERM=xterm-256color
 RUN git clone https://github.com/universal-ctags/ctags.git /home/docker/ctags
 RUN git clone https://github.com/VundleVim/Vundle.vim.git /home/docker/.vim/bundle/Vundle.vim
 

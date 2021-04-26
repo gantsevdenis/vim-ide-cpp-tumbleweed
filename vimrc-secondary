@@ -1,7 +1,3 @@
-augroup autoformat_settings
-  autocmd FileType c,cpp,proto AutoFormatBuffer clang-format
-augroup END
-
 " ------------------------------------------------------------
 " THEME CONFIGURATION
 " ------------------------------------------------------------
